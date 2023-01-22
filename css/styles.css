@@ -1,0 +1,332 @@
+/*Global Elements*/
+
+:root {
+    --primary-color: #2196f3;
+    --primary-colorFont: #212121;
+    --secondary-colorFont: #757575;
+    --third-colorFont: #ffffff;
+    --main-bg-color:#e5e5e5;
+    --dark-bg-color: #2f303a;
+    --light-bg-color:#ffffff;
+    --lightgrey-bg-color: #f5f4fa;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   padding: 0;
+}
+
+img {
+   display: block;
+}
+
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-colorFont);
+}
+
+/* header & footer background, font, spacing */
+
+.aboutus-section .container {
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    padding: 32px 0;
+    border-bottom: 1px solid #ececec;
+    background-color: var(--light-bg-color);
+}
+
+/*Navigation list color for current page */
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 93px;
+}
+
+.nav-list-link,
+.nav-list-link-card {
+    display: block;
+}
+
+.address-list {
+    display: flex;
+    justify-content: right;
+    
+}
+
+.nav-list li:nth-child(2),
+.nav-list li:nth-child(3) {
+    margin-left: 50px;
+}
+
+.nav-list-link-card {
+    color: var(--primary-color);
+}
+
+.nav-list-link,
+.nav-list-link-card,
+.address-info {
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    background-color: var(--dark-bg-color);
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+.contact-list-item-map {
+    text-decoration: none;
+    color: var(--third-colorFont);
+  }
+
+.contact-list-item-card {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+.contact-list-item-map:hover,
+.contact-list-item-map:focus,
+.contact-list-item-card:hover,
+.contact-list-item-card:focus {
+    color: var(--primary-color);
+  }
+
+/* List styles */
+.nav-list,
+.address-list,
+.features-list,
+.ourteam-list,
+.contact-list,
+.aboutus-list,
+.filter-btn-list,
+.portfolio-list {
+    list-style: none;
+}
+/* List styles end */
+
+/*Header logo*/
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/*Header formatings*/
+
+.nav-list-link {
+    color: var(--primary-colorFont);
+}
+
+.address-list {   
+    margin: 0;
+    margin-left: auto;
+}
+
+.address-list li:last-child {
+    margin-left: 50px;
+}
+
+.address-info {
+    color: var(--secondary-colorFont);
+}
+
+/*Header Hover & Focus styles */
+
+.nav-list-link:hover,
+.nav-list-link:focus,
+.address-info:hover,
+.address-info:focus {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+
+.hero-main-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+.hero-up-side {
+    background-color: var(--dark-bg-color);
+    color: var(--third-colorFont);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+/* Hero Section button */
+.hero-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    align-items: center;
+    border-radius: 4px;
+    border: transparent;
+    background-color: var(--primary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--third-colorFont);
+    cursor: pointer;
+    padding: 10px 32px;
+   display: inline-block;
+   min-width: 216px;
+    
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--primary-colorFont);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+/*Feature secton */
+.features-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-description {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: var(--secondary-colorFont);
+}
+
+/* What we do section / About us section */
+/* Our Team */
+.aboutus-title,
+.ourteam-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ourteam {
+    background-color: var(--lightgrey-bg-color);
+}
+
+.ourteam-list-header {
+    font-weight: 500;
+}
+
+.ourteam-list-header,
+.ourteam-list-description {
+    line-height: 1.888;
+    letter-spacing: 0.03em;
+}
+
+.ourteam-list-description {
+    color: var(--secondary-colorFont);
+}
+
+/*Portfolio button*/
+
+.filter-btn-list .btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-colorFont);
+    background: var(--lightgrey-bg-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--primary-color);
+    color: var(--third-colorFont);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*end of button*/
+
+/*Portfolio main*/
+.portfolio-list-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-list-description {
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--secondary-colorFont);
+}
+/*end of Main*/
