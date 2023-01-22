@@ -61,6 +61,8 @@ body {
 }
 
 .header .container {
+    display: flex;
+    align-items: center;
     padding: 32px 0;
     border-bottom: 1px solid #ececec;
     background-color: var(--light-bg-color);
@@ -87,9 +89,19 @@ body {
 
 .address-list {
     display: flex;
-    justify-content: right;
-    
+    align-items: center;
+    justify-content: flex-end; 
+    margin-left: auto;
 }
+
+.address-list li:last-child {
+    margin-left: 50px;
+}
+
+.address-info {
+    color: var(--secondary-colorFont);
+}
+
 
 .nav-list li:nth-child(2),
 .nav-list li:nth-child(3) {
@@ -168,19 +180,6 @@ body {
 
 .nav-list-link {
     color: var(--primary-colorFont);
-}
-
-.address-list {   
-    margin: 0;
-    margin-left: auto;
-}
-
-.address-list li:last-child {
-    margin-left: 50px;
-}
-
-.address-info {
-    color: var(--secondary-colorFont);
 }
 
 /*Header Hover & Focus styles */
