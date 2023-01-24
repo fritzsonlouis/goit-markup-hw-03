@@ -272,14 +272,26 @@ body {
 
 /* What we do section / About us section */
 /* Our Team */
+.aboutus-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-title {
+    margin-bottom: 20px; /* add some margin between title and list */
+}
 .aboutus-list {
     display: flex;
+    gap: 30px;
+    justify-content: center; /* center the list */
 }
 
-.aboutus-item:not(:last-child) {
-    margin-right: 30px;
+.aboutus-title {
+    display: flex;
+    align-items: center;
 }
-
 
 .aboutus-title,
 .ourteam-title {
@@ -289,6 +301,24 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
+} 
+
+.ourteam .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ourteam-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* center the list */
+}
+
+.ourteam-title {
+    display: flex;
+    align-items: center;
 }
 
 .ourteam {
