@@ -283,6 +283,10 @@ body {
 /* What we do section / About us section */
 /* Our Team */
 
+.aboutus-section {
+    padding-top: 0;
+}
+
 .aboutus-list {
     display: flex;
 }
